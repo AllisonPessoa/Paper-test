@@ -1,214 +1,46 @@
-\documentclass[journal=jacsat,manuscript=article, layout=twocolumn]{achemso}
-\setkeys{acs}{keywords = true}
-
-\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
-\usepackage{siunitx}
-\usepackage[T1]{fontenc}     % default is 'OT1'
-\usepackage{mathrsfs}
-\usepackage{multicol}
-\usepackage{hyperref}
-
-\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
-\newcommand*\Yttria[1]{Y$_{2}$O$_{3}$}
-\newcommand*\Fluorite[1]{NaYF$_{4}$}
-\newcommand*\Yb[1]{Yb$^{3+}$}
-\newcommand*\Er[1]{Er$^{3+}$}
-\newcommand*\Ln[1]{Ln$^{3+}$}
-
-\newcommand*\Nd[1]{Nd$^{3+}$}
-\newcommand*\fourGseven[1]{$^4$G$_{7/2}$}
-\newcommand*\fourInine[1]{$^4$I$_{9/2}$}
-
-\newcommand*\twoHnine[1]{$^2$H$_{9/2}$}
-
-\newcommand*\fourFthree[1]{$^4$F$_{3/2}$}
-\newcommand*\fourFfive[1]{$^4$F$_{5/2}$}
-\newcommand*\fourFseven[1]{$^4$F$_{7/2}$}
-
-\newcommand*\twoHeleven[1]{$^2$H$_{11/2}$}
-\newcommand*\fourSthree[1]{$^4$S$_{3/2}$}
-\newcommand*\fourFnine[1]{$^4$F$_{9/2}$}
-
-\newcommand*\fourIeleven[1]{$^4$I$_{11/2}$}
-\newcommand*\fourIthirteen[1]{$^4$I$_{13/2}$}
-\newcommand*\fourIfifteen[1]{$^4$I$_{15/2}$}
-
-\providecommand{\latin}[1]{\textit{#1}}
-
-\author{Allison R. Pessoa}
-\affiliation[UFPE]
-{Department of Physics, Universidade Federal de Pernambuco, Recife, 50740-540, Pernambuco, Brazil}
-\altaffiliation{Current address: Chair in Hybrid Nanosystems, Nanoinstitute Munich, Faculty of Physics, Ludwig-Maximilians-Universität München, München, 80539, Bavaria, Germany}
-\email{allison.pessoa@ufpe.br}
-
-\author{Jefferson A. O. Galindo}
-\affiliation[UFPE]
-{Department of Physics, Universidade Federal de Pernambuco, Recife, 50740-540, Pernambuco, Brazil}
-
-\author{Luiz F. dos Santos}
-\affiliation[USP]
-{Laboratório de Materiais Luminescentes Micro e Nanoestruturados—Mater Lumen, Departamento de Química, Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto, Universidade de São Paulo, Ribeirão Preto, Brazil}
-
-\author{Rogéria R. Gonçalves}
-\affiliation[USP]
-{Laboratório de Materiais Luminescentes Micro e Nanoestruturados—Mater Lumen, Departamento de Química, Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto, Universidade de São Paulo, Ribeirão Preto, Brazil}
-
-\author{Leonardo de S. Menezes}
-\affiliation[LMU]
-{Chair in Hybrid Nanosystems, Nanoinstitute Munich, Faculty of Physics, Ludwig-Maximilians-Universität München, München, 80539, Bavaria, Germany}
-\alsoaffiliation[UFPE]
-{Department of Physics, Universidade Federal de Pernambuco, Recife, 50740-540, Pernambuco, Brazil}
-
-\author{Anderson M. Amaral}
-\affiliation[UFPE]
-{Department of Physics, Universidade Federal de Pernambuco, Recife, 50740-540, Pernambuco, Brazil}
-
-\title{Influence of non-thermally coupled emission bands on the performance of \Yttria~:\Yb~/\Er~ single-particle nanothermometers}
-
-\keywords{Lanthanide Ions; Upconversion; Luminescence thermometry; Single nanoparticle spectroscopy; Multiphoton power-law
-\vspace{0.5cm}}
-
-\let\oldmaketitle\maketitle
-\let\maketitle\relax
-
+\documentclass[12pt]{article}
+\usepackage{lingmacros}
+\usepackage{tree-dvips}
 \begin{document}
-\twocolumn[
-\begin{@twocolumnfalse}
-\oldmaketitle
-\begin{abstract}
 
-Lanthanide-doped single dielectric nanoparticles have been exploited towards the realization of temperature sensing in the nanoscale with high spatial, temporal, and thermal resolution. However, due to the relatively small number of emitters when compared with suspensions or powders, the luminescence readouts in individual nanocrystals usually require higher excitation power densities to keep an acceptable signal-to-noise ratio. Since in numerous cases these thermometers work by exploiting upconversion excitation pathways, higher excitation powers can lead to higher-order photon emissions that can overlap with the luminescent bands used to perform the temperature measurements. This work shows that the performance and the characterization of $\sim$400 nm \Yttria~: \Yb~/\Er~ single-particle nanothermometers vary depending on the excitation irradiance if higher-order spectrally overlapping bands are not properly taken into account. We apply a recently developed method to separate these bands based on their different power-law, without the need for multiple wavelength excitation, resulting in a correction procedure that reduces the temperature readout uncertainty from \SI{0.6}{\kelvin} to \SI{0.3}{\kelvin} in the specific case of the nanothermometer investigated in this work.
+\section*{Notes for My Paper}
 
-\end{abstract}
-\end{@twocolumnfalse}
-]
+Don't forget to include examples of topicalization.
+They look like this:
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Start the main part of the manuscript here.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction}{\label{sec:intro}}
+{\small
+\enumsentence{Topicalization from sentential subject:\\ 
+\shortex{7}{a John$_i$ [a & kltukl & [el & 
+  {\bf l-}oltoir & er & ngii$_i$ & a Mary]]}
+{ & {\bf R-}clear & {\sc comp} & 
+  {\bf IR}.{\sc 3s}-love   & P & him & }
+{John, (it's) clear that Mary loves (him).}}
+}
 
-Measuring and controlling temperature is crucial in numerous physical-chemical processes. Following the miniaturization of electronic, biological, and medical tools, nanoscale thermometry raises as an emergent research field \cite{Bradac_2020, Jaque_2022, Maturi_2021, Brites_2012}. In this direction, lanthanide- (\Ln~) doped dielectric nanoparticles are being intensively exploited for temperature mapping with micrometric or sub-micrometric spatial resolution \cite{Martinez_2022, vanSwieten_2021, Gong_2021, Pinol_2020, Savchuk_2019, Baral_2018, Aigouy_2005} due to their distinguished optical properties. The optically active electrons in \Ln~ ions have a $4f$ orbital configuration. Since this orbital is shielded by the filled $5s$ and $5p$ subshells, the luminescence light emitted by \Ln~ ions present a high photo-stability and narrow bandwidths \cite{Brik_2020}. Besides this, \Ln~ systems are well-known also for their relatively high upconversion (UC) efficiency \cite{Zhu_2019}. However, to achieve higher spatial resolutions in thermometry experiments, the single-particle measurement level must be accomplished \cite{Dong_2020}, and a thorough investigation of \Ln~ systems in this regime is under current discussion in the literature \cite{Pessoa_2022, Goncalves_2021, Galindo_2021, Galindo_2021_corr, Galvao_2021, Camargo_2017, Galvao_2021_2}.
+\subsection*{How to handle topicalization}
 
-One of the most studied \Ln~-based UC systems is the \Yb~/\Er~ due to the efficient energy transfer (ET) between these ions \cite{Menezes_2015}. The standard approach is to excite the sample with NIR radiation around \SI{980}{\nano\meter} and detect the luminescence related to two emission bands in the green region of the spectrum ($\sim$\SI{550}{\nano\meter}), in a two-photon UC process. However, due to the higher excitation power required to obtain an acceptable Signal-to-Noise Ratio (SNR) when probing single particles, often higher-order bands can also be present in the UC spectrum. For example, it is well-known that in NaYF$_4$: \Yb~/\Er~ systems, a three-photon UC route also originates a band in the green region (transition \twoHnine~ $\rightarrow$ \fourIthirteen~ of the \Er~ ions) \cite{Ruhl_2021}. Depending on the host matrix, this band can be partially, or even totally overlapped with the other green bands (two-photon dependent) used to perform thermometry. However, this three-photon band does not follow the same temperature dependence as the luminescence bands from the thermally coupled levels. Very recent works are discussing the implications of this non-thermally overlapped transition to the thermometer's reliability and looking for strategies to circumvent this problem \cite{Martinez_2022, Ruhl_2021, Martins_2021, vanSwieten_2021, Labrador_2018}.
+I'll just assume a tree structure like (\ex{1}).
 
-The yttria (\Yttria~) matrix has special importance as a \Ln~-host in biological applications due to its high biocompatibility (non-toxicity) and chemical stability \cite{Geitenbeek_2019}. For example, \Yttria~: \Yb~/\Er~ nanoparticles have shown a high viability in glioblastoma multiform cells, making them promising theranostic agents as biomarkers, biosensors and photosensitizers in coadjuvant photodynamic therapy \cite{dosSantos_2022}. To the best of our knowledge, there is no report to date on the identification and separation of the \twoHnine~ $\rightarrow$ \fourIthirteen~ luminescence band in \Yttria~: \Yb~/\Er~ systems. This is partially because this three-photon band is almost completely overlapped with the other green bands (originated from a two-photon process) and requires a relatively high excitation power to be noticed.
-
-Recently, our research group developed a new method for separating spectrally overlapped luminescent bands through a power-law analysis by using a single wavelength excitation in UC experiments \cite{Galindo_2022}, instead of using multiple excitation at different wavelengths as some works propose \cite{Ruhl_2021, vanSwieten_2021}. The algorithm was exemplary applied to NaYF$_4$: \Yb~/\Er~ systems, and proved to return separately the two- and three-photon spectra with greater SNR when compared to commmon approaches found in the literature. In the present work, we successfully apply this method to separate the two- and three-photon contribution in \Yttria~:\Yb~/\Er~ single nanoparticles, being possible to remove the temperature-independent contribution. We further discuss the implications of this overlapping band in the thermometric performance of these systems if the proposed correction is not carried out.
-
-\section{Materials and Methods}{\label{sec:mat&met}}
-
-\subsection{Sample preparation}{\label{subsec:sample}}
-
-The sample consists of \Yttria~: \Yb~/\Er~ nanoparticles with an average diameter of $\sim$\SI{400}{\nano\meter} obtained by homogeneous precipitation synthesis followed by annealing. Firstly, the \Er~ and \Yb~ co-doped Y(OH)CO$_3$ was prepared as a precursor of the oxide nanoparticles, maintaining the spherical morphology. Urea thermolysis was realized starting from a Y(NO$_3$)$_3$.6H$_2$O solution (99.8\% purity – Sigma Aldrich®) and urea (99\% purity – Synth®); the final concentration of these reactants were 0.01 and \SI{0.1}{\mol\per\liter}, respectively. The dopants \Er~ and \Yb~ ions were introduced as aqueous solutions of erbium nitrate and ytterbium nitrate. These precursors were prepared by acid dissolution with Ln$_2$O$_3$ (Ln = Er, Yb) using HNO$_3$ solution to obtain acid Ln(NO$_3$)$_3$ salts. The acid excess was eliminated by evaporation until the solutions achieved pH = 4, and the volume was adjusted to obtain a final concentration of \SI{0.1}{\mol\per\liter}. The final doping concentration were 1.5 \% and 0.5 \% for \Er~ and \Yb~, respectively, in relation to the Y$^{3+}$ final molar concentration. After the combination of these reactants, the thermolysis was performed in a closed flask at \SI{80}{\celsius} for 2 h, until the nanoparticles precipitated. After the reaction was complete, the nanoparticles precipitated were separated by centrifugation at 4000 rpm in a centrifuge Centribio® (Model: Centrilab 80 – 2B), washed five times with deionized water and dried at \SI{70}{\celsius} during 6 h. The final powder based on \Er~/\Yb~ co-doped \Yttria~ was kept in a thermal treatment at \SI{900}{\celsius} for 2h, with a heating rate of \SI{5}{\celsius\per\minute}. This procedure eliminated carbonate and hydroxyl groups, in order to minimize luminescence quenching.
-
-The powder was suspended in ethanol in a concentration of \SI{1.0}{\milli\gram\per\milli\liter}, then strongly ultrasonicated for 5 minutes by a tip ultrasonicator to separate most of the aggregates. The colloidal suspension was kept at rest for 24h to precipitate the aggregates. Then, a superficial droplet of \SI{10}{\micro\litre} was taken and spin-coated on a clean glass coverslip (20 seconds at 3200 rpm). With this procedure, we observe mostly single particles laying at the coverslip apart from each other by, at least, \SI{2}{\micro\meter}. See, for example, similar procedures in references \citep{Galindo_2021, Galindo_2021_corr, Galvao_2021}.
-
-\subsection{Experimental Setup}{\label{subsec:setup}}
-
-The \Yttria~: \Yb~/\Er~ single nanoparticles are excited by a \SI{977}{\nano\meter} CW laser on a homemade inverted optical microscope with an oil-immersion objective lens (numerical aperture of 1.25). In this configuration, the laser spot diameter at the focal position is approximately \SI{400}{\nano\meter}, which is comparable to the particle size. Therefore, it is always possible to differentiate single particles from aggregates. The luminescence emitted by the particle is collected by the same objective lens and sent to a spectrometer after passing though spectral filters to cut the reflected excitation. It is also possible to excite the samples with blue laser at \SI{450}{\nano\meter} for downconversion (DC) experiments. The sample's temperature can be controlled by using a thermal blanket that embraces the objective lens, transferring the heat indirectly to the particle via the immersion oil. The temperature of the coverslip is constantly monitored by a thermal camera. It is necessary to wait at least 20 minutes after setting up the work temperature to assure thermalization. More details on the experimental setup can be found in other works from our group also employing single particles \cite{Goncalves_2021, Galindo_2021, Galindo_2021_corr, Galvao_2021}.
-
-\section{Results and Discussions}{\label{sec:discussion}}
-\subsection{UC spectra in \Yb~/\Er~ systems}{\label{subsec:temperature_measr}}
-
-By exciting the system with a light source emitting around \SI{980}{\nano\meter} (UC scheme), both \Er~ and \Yb~ ions can absorb the incoming radiation. However, since the \Yb~ ions have a much higher cross section compared to the \Er~ ions at this wavelength, most of the radiation is absorbed by the \Yb~ and transferred to the \Er~ through an ET process \cite{Berry_2015}. Two \Yb~ ions can transfer energy simultaneously to one \Er~ ion in order to perform a two-step UC process (or a single \Yb~ can transfer twice), populating initially the \fourFseven~ state \cite{Goncalves_2021}, as shown in Fig. \ref{fig:energy}a. The electronic population mainly decays non-radiatively to the \twoHeleven~ and \fourSthree~ because the energy difference between the \fourFseven~ and \twoHeleven~ is comparable to the effective phonon energy of the matrix \cite{Dechao_2016}. When these ions are doping the \Yttria~ matrix, the radiative decay from the \twoHeleven~ and \fourSthree~ to the ground state (\fourIfifteen~) generate two bands in the green region, centered at $\sim$\SI{530}{\nano\meter} and $\sim$\SI{555}{\nano\meter}, respectively, as shown in Fig. \ref{fig:energy}b. These are the standard transitions used to perform temperature measurements in \Yb~/\Er~ systems, as we will discuss later on.
-
-\begin{figure*}[h!]
-\begin{center}
-\includegraphics{Figures/energy_level.png}
-\caption{a) Partial energy level diagram of the \Er~ ions and photophysical dynamics on UC scheme. Solid upwards arrows represent energy transfer from \Yb~ ions (not shown); Curly arrows represent non-radiative relaxation; Solid downwards arrows represent radiative decays. Energy levels in scale. b) UC spectra of a single particle in the green spectral region along with the predicted lines. Red and black vertical lines represent three and two-photon transitions, respectively. c) UC spectra under the higher excitation irradiance (\SI{e7}{\watt\per\square\centi\meter} - red curve) and the lower excitation irradiance (\SI{e4}{\watt\per\square\centi\meter} - black curve). The dashed vertical lines represent the spectral position of non-overlapped peaks. d) Power-law behaviour for the spectral intensity at \SI{549}{\nano\meter} (blue dots) and \SI{573}{\nano\meter} (orange dots). e) Same power-law data showing the highest powers used in the algorithm. The intensity was re-scaled in the y-axis for better visualization of the different slopes.}
-\label{fig:energy}
-\end{center}
-\end{figure*}
-
-If the excitation power is sufficiently high, as it is usual in single-particle measurements, a three-step UC can take place. One of the possible routes is a third-step ET process from \fourFnine~ to \twoHnine~ \cite{Ruhl_2021}, as shown in Fig. \ref{fig:energy}a. However, there are also other excitation routes for the electrons to achieve the \twoHnine~ level. For example, an ET from \fourSthree~ to $^2$K$_{15/2}$, followed by non-radiative relaxations \cite{Berry_2015} (not shown in the diagram of Fig. \ref{fig:energy}a). From the \twoHnine~ we can expect a radiative transition to the \fourIthirteen~ state, generating a band in the green region, with wavelengths slightly higher than that for the \fourSthree~ $\rightarrow$ \fourIfifteen~, due to the lower energy difference \cite{Kisliuk_1964}. In Fig. \ref{fig:energy}b we plot the upconversion spectrum at room temperature in the green spectral region of a single \Yttria~: \Yb~/\Er~ nanoparticle along with the possible transitions in the same wavelength range between all the theoretically calculated Stark sublevels of the initial and final participating states. These lines were calculated based on the data presented in the work of \citeauthor{Kisliuk_1964} \cite{Kisliuk_1964} for \Er~ ions in the \Yttria~ matrix at \SI{77}{\kelvin}. It is possible to see a relatively good agreement between the predicted lines and the experimental ones. The slight difference in our data is attributed firstly to the different temperatures at which our experiments were carried out (room temperature) and to the presence of the \Yb~ ions in our case that can perturb the Stark splitting. Naturally, not all predicted lines result in detectable luminescent lines due to the different transitions rates and selection rules between the states involved \cite{Brik_2020}.
-
-In Fig. \ref{fig:energy}b, red and black vertical lines represent three and two-photon transitions, respectively. We notice that between \SI{520}{\nano\meter} and \SI{550}{\nano\meter} there are no predicted transitions from a three-photon UC route, but we can expect a three-photon contribution overlapped with the two-photon band for wavelengths larger than \SI{550}{\nano\meter}. This is observed in Fig. \ref{fig:energy}c. As the excitation power increases, some peaks appear almost completely overlapped with the \fourSthree~ $\rightarrow$ \fourIfifteen~ transition. The exact spectral positions of these bands depend on the host matrix because different host matrices have different transition selection rules and Stark sublevel splittings, due to the material symmetry \cite{Brik_2020}. In the case of \Fluorite~, for example, the two-photon band in the green region \fourSthree~ $\rightarrow$ \fourIfifteen~ is relatively well-separated from the three-photon band, \twoHnine~ $\rightarrow$ \fourIthirteen~ \cite{Goncalves_2021}. Therefore, its identification and separation is relatively easier by directly subtracting the DC spectrum (excited with a blue laser directly in the \fourFfive, for example) from the UC spectrum \cite{vanSwieten_2021, Ruhl_2021}. Conversely, in \Yttria~ systems, the next section will show that separating both contributions by this direct approach does not result in spectra with good SNR because of the higher degree of overlapping and the relatively low intensity of the three-photon band.
-
-\subsection{Method for separating the overlapping multiphoton UC bands}{\label{subsec:separating}}
-
-The direct approach (by subtracting the DC from the UC spectrum) for identifying and separating the overlapped three- and two-photon UC emission bands has the drawback of needing at least two light sources (in our case, \SI{977}{\nano\meter} for the UC and \SI{450}{\nano\meter} for the DC). The DC spectrum usually has lower SNR because the absorption of the \Er~ ions at \SI{450}{\nano\meter} is less efficient than in the UC scheme with the codoped system \cite{Huang_2015}. Besides that, under \SI{450}{\nano\meter} illumination, a spurious non-constant background can hinder the analysis, decreasing even more the SNR. In the method developed by our group in a recent work \cite{Galindo_2022}, we were able to separate the overlapped two- and three-photon bands by examining their different power dependence. Since these two bands arise from different photophysical processes, it can be expected that they behave differently as a function of the excitation power. Therefore, our method relies on collecting a set of UC spectra at a few different excitation powers and analyzing the power law for each wavelength of the luminescence spectrum.
-
-Usually, spectrometers employ a CCD camera as a photodetector. A particular pixel in the CCD camera measures the photon flux (photons per unit second) for a definite wavelength range, which depends on the sensor area and on the spectrometer's resolving power (mainly entrance slit width, grating type and spectrometer length). If we identify a spectral region at which the transitions are not overlapped, we can see the power dependence of the spectral bands separately, and how they are changed in the overlapping region. In Fig. \ref{fig:energy}d we show the dependence of the luminescence intensity (photon flux per second) with the excitation irradiance ($\mathcal{P}$) for two different wavelengths - single CCD pixel, \SI{549}{\nano\meter} and \SI{573}{\nano\meter}, which we call $I_{549}(\mathcal{P})$ and $I_{573}(\mathcal{P})$, respectively. These wavelengths are identified by the vertical dashed lines in the spectrum of Fig. \ref{fig:energy}c. By comparing with the theoretical prediction in Fig. \ref{fig:energy}b we see that they correspond to the two- and three-photon bands separately. 
-
-In the limit of infinitely low excitation powers, the luminescence intensity at the wavelength $\lambda$ from a n-photon process, $I_{\lambda, n}$, is expected to have a dependence like $I_{\lambda, n} \propto \mathcal{P}^n$ \cite{Pollnau_2000}. However, due to the high excitation power usually necessary in single nanoparticle measurements, the transitions are easily saturated, as we see in Fig. \ref{fig:energy}d for both curves. Even in the lower excitation regime used in this work, the slopes of the first five points in Fig. \ref{fig:energy}d are $n_{549} = 1.37$ and $n_{573} = 1.52$ for the \SI{549}{\nano\meter} and \SI{573}{\nano\meter} luminescence lines, respectively. Since our method is based on this difference of the power-dependence curve, a better fitting performance can be obtained if the relative difference $\sigma = (n_{\lambda, 3} - n_{\lambda, 2})/n_{\lambda, 3}$ is increased. We achieve this by comparing the power law in the far-saturated regime, as shown in Fig. \ref{fig:energy}e. In this case, the slopes are $n_{549} = 0.34$ and $n_{573} = 0.56$, giving a relative difference of $\sigma = 0.39$, against $\sigma = 0.098$ if compared to the lower-power case.
-
-The algorithm follows by fitting the power-dependence curves for each wavelength ($\lambda$) with the function \cite{Galindo_2022}
-
-\begin{equation} \label{eq:fitting_model}
-I_{\lambda} = a(\lambda) \cdot \mathcal{P}^{n_{549}} + b(\lambda) \cdot \mathcal{P}^{n_{573}} \quad ,
-\end{equation}
-
-\noindent where $a$ and $b$ are our fitting parameters and represent the the amplitude of the two- and three-photon spectra separately, respectively. The result is shown in Fig. \ref{fig:separated_bands}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=3.33in]{Figures/separated_bands.png}
-\caption{a) Two-photon emission spectrum resulted from the separation algorithm (black solid curve), along with the measured DC spectra (blue dashed curve). Both curves are normalized by the maximum in the region between \SI{535}{\nano\meter} and \SI{545}{\nano\meter}, where there is no overlapping. b) Three-photon emission spectrum retrieved from the algorithm (red curve) along with the direct subtraction of the UC and DC spectra (grey curve), which has been vertically displaced for the sake of better visualisation.}%
-\label{fig:separated_bands}
-\end{center}
-\end{figure}
-
-We observe that the method separates both nonlinear bands with a higher SNR when compared to the direct subtraction between the UC and DC spectra (Fig. \ref{fig:separated_bands}b). Furthermore, the shape of the DC spectrum depends crucially on the background correction, and on the wavelength selected to normalize the curves. The DC spectrum in Fig. \ref{fig:separated_bands}a is background-corrected by a 3rd-order polynomial function, even tough the direct subtraction has a very low SNR. In addition, in the three-photon spectrum in Fig. \ref{fig:separated_bands}b we see a small contribution supposedly from a higher-order band in the region of \SIrange{520}{540}{\nano\meter}. However, according to the theoretical lines predicted in Fig. \ref{fig:energy}b, there is no three-photon band in this region. We attribute this as an effect of self-heating, and not to a higher-order UC luminescence band, as we will discuss in the following section.
-
-\subsection{Influence of the three-photon UC emission band on the thermometric performance}{\label{subsec:thermometry}}
-
-The most common approach to measure the temperature from the luminescence spectrum in \Yb~/\Er~ systems is using the Luminescence Intensity Ratio (LIR) technique. This method supposes that the energy difference between the thermally coupled levels \twoHeleven~ and \fourSthree~ is low enough to allow rapid phononic transitions between them \cite{Suta_2020}. That is, the nonradiative transition rates must dominate the photophysical processes between these levels. In this case, the ratio between the intensities of the luminescent bands ($R$) is given by the Boltzmann factor, written as \cite{Suta_2020}
-
-\begin{equation} \label{eq:lir_definition}
-R(T) = \frac{\int_{518}^{542} \frac{\partial I(\lambda)}{\partial \lambda} \mathrm{d}\lambda}{\int_{545}^{575} \frac{\partial I(\lambda)}{\partial \lambda} \mathrm{d}\lambda} = C \ln\left( \frac{-\Delta E}{k_\mathrm{B}T} \right) \quad ,
-\end{equation}
-
-\noindent where $\Delta E$ is the energy difference between \twoHeleven~ and \fourSthree~, $k_\mathrm{B}$ is the Boltzmann constant, and $C$ is a constant factor that depends on the radiative decay rates and on the degeneracy of the energy levels from which the luminescence bands originate. Notice that $\partial I(\lambda)/\partial \lambda$ is the spectral photon flux (the spectral curve), given in photon$\cdot$s$^{-1}\cdot$nm$^{-1}$ \cite{Suta_2020}. Studies have shown that, especially in single-particle measurements, some external factors can change the thermometer characteristics. The surrounding medium \cite{Galindo_2021, Galindo_2021_corr} and the doping concentration \cite{Suta2_2020} are examples of parameters that can perturb the thermal equilibrium, leading to a different response from the theoretical prediction given by Eq. \eqref{eq:lir_definition}. Fortunately, in a suitable temperature range, we can still observe the same temperature dependence of the LIR as in Eq. \eqref{eq:lir_definition}, but with the effective parameters $\Delta E_{eff}$ and $C_{eff}$ \cite{Goncalves_2021, Galvao_2021}. The listed effects are intrinsically present due to the photophysical dynamics of the thermally coupled levels. This situation is different from the artifact resulted from the intruding three-photon band, which can be removed with the correct data processing, as follows.
-
-Once the multiphoton luminescence bands are separated, they can be used to split the two- and three-photon contributions from other spectra. Since $a(\lambda)$ and $b(\lambda)$ are now determined, we can fit any new spectra as $I(\lambda) = c_1\cdot a(\lambda) + c_2\cdot b(\lambda)$ in the region between \SI{555}{\nano\meter} and \SI{575}{\nano\meter}, where the fitting parameters are $c_1$ and $c_2$. Then, if we want only the two-photon component of our spectrum, we can remove the factor $c_2\cdot b(\lambda)$ from the original data. Fig. \ref{fig:LIR_result}a and \ref{fig:LIR_result}b show histograms of the LIR value calculated as in Eq. \eqref{eq:lir_definition} for the corrected and non-corrected single-particle spectrum under the highest excitation power ($\sim$\SI{e7}{\watt\per\square\centi\meter}). It is immediately noticeable that there is an important reduction in the standard deviation, which will reflect on the thermometer temperature readout error. Furthermore, in Fig. \ref{fig:LIR_result}c we show the thermometer calibration for both cases, and the resulting parameters from the fittings are shown in Table 1. $\Delta E_{eff}$ is slightly reduced more than the uncertainty, while $\ln(C_{eff})$ is kept practically constant. An important parameter to characterize the thermometer is the relative sensitivity, given by $S_r = \Delta E_{eff}/(k_\mathrm{B}T^2)$. Practically, there is almost no variation on $S_r$ between the corrected and uncorrected cases, but a key reduction is achieved in the temperature readout uncertainty from \SI{0.6}{\kelvin} to \SI{0.3}{\kelvin}. This is calculated by uncertainty propagation based on the correlated fitting parameters \cite{Pessoa_2022, Galindo_2021, Galindo_2021_corr}.
-
-\begin{table}[]
-\caption{Thermometer calibration before and after the three-photon band correction}
-\label{tab:thermometer}
-\begin{tabular}{cccc}
-            & \begin{tabular}[c]{@{}c@{}}$\Delta E_{eff}$ \\ (cm$^{-1}$)\end{tabular} & $\ln(C_{eff})$  & \begin{tabular}[c]{@{}c@{}}$\delta T$ \\ (K)\end{tabular} \\ \hline
-Uncorrected & $958 \pm 16$                                                            & $3.53 \pm 0.07$ & 0.6                                                       \\ \hline
-Corrected   & $931 \pm 8$                                                             & $3.57 \pm 0.04$ & 0.3                                                       \\ \hline
+{\small
+\enumsentence{Structure of A$'$ Projections:\\ [2ex]
+\begin{tabular}[t]{cccc}
+    & \node{i}{CP}\\ [2ex]
+    \node{ii}{Spec} &   &\node{iii}{C$'$}\\ [2ex]
+        &\node{iv}{C} & & \node{v}{SAgrP}
 \end{tabular}
-\end{table}
+\nodeconnect{i}{ii}
+\nodeconnect{i}{iii}
+\nodeconnect{iii}{iv}
+\nodeconnect{iii}{v}
+}
+}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=3.33in]{Figures/influence_LIR.png}
-\caption{Histogram of 880 spectra at room temperature a) before and b) after the three-photon band correction. The mean values are 0.34 and 0.39, respectively. The standard deviations are 0.025 and 0.015, respectively. c) Thermometer characterization before (red) and after (blue) the correction procedure. The data error bars were calculated based on the standard deviations presented in a) and b). The dashed lines represent the Boltzmann fittings.}%
-\label{fig:LIR_result}
-\end{center}
-\end{figure}
+\subsection*{Mood}
 
-Realize that the integral on the denominator in Eq. \eqref{eq:lir_definition} includes the complete \fourSthree~ band. If one does not remove the \twoHnine~ $\rightarrow$ \fourIthirteen~ band from the spectrum, the thermometric parameter $R$ would have a power dependence which tends to decrease with the increase of the excitation power, as shown by \citeauthor{Ruhl_2021} \cite{Ruhl_2021} and also discussed by \citeauthor{Pessoa_2022} \cite{Pessoa_2022} According to Eq. \eqref{eq:lir_definition}, a decrease in $R$ corresponds to an apparent decrease on the temperature, which is not physically reasonable. By increasing the excitation powers it is expected that the temperature also increases due to possible self-heating effects. In Fig. \ref{fig:self_heating} we exemplify this by showing the temperature measured by the thermometer as a function of the excitation power, for the corrected and uncorrected cases. The calibration in this case was performed by using the lower-power data. In the lower-power regime, the temperature response from both corrected and uncorrected cases are similar, however since the SNR is lower, a higher temperature measurement uncertainty is expected. By increasing the excitation power it is possible to obtain spectra with better SNR, but we can observe a temperature difference up to \SI{10}{\celsius} in the highest power if the spectra are not corrected due to the presence of the intruding three-photon band.
-
-Since we are applying the algorithm in a regime of high-saturation (higher powers in the order of $\sim$\SI{e6}{\watt\per\square\centi\meter}), the effect of self-heating should be present (as shown in Fig. \ref{fig:self_heating}) because many phonons are created on the nonradiative decay from higher-lying levels. For example, \citeauthor{Joseph_2018} \cite{Joseph_2018} showed that the effect of self-heating in \Fluorite~: \Yb~/\Er~ nanoparticles dispersed in toluene is relevant for excitation intensities larger than \SI{250}{\watt\per\square\centi\meter}. Therefore, when increasing the excitation power, the electronic population in \twoHeleven~ also increases because the matrix temperature rises, then the upper thermally coupled band presents a slightly higher slope in the power law. This is the reason why the algorithm returned a band between \SIrange{520}{540}{\nano\meter} in Fig. \ref{fig:separated_bands}b which is not due to a three-photon process. 
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=3.33in]{Figures/self-heating_correction.png}
-\caption{Measured temperature by the single-particle thermometer as a function of the excitation power for the corrected (blue curve) and uncorrected (red curve) cases.}%
-\label{fig:self_heating}
-\end{center}
-\end{figure}
-
-In a previous work from our group using \Fluorite~ \Yb~/\Er~ microcrystals \cite{Pessoa_2022}, the effect of the three-photon band correction was critical when imaging the luminescence emission spatially-resolved inside a single microparticle. In that case, we limited the integration interval of the \fourSthree~ band to a wavelength lower than the beginning of the overlapping. However, in the yttria matrix, this procedure is not straightforward, as we have shown. Besides this, limiting the integration of the \fourSthree~ increases the measurement uncertainty. 
-
-Another possibility is employing \Yb~/\Er~ systems as primary thermometers, without the need for prior calibration though a $R \; vs. \; T$ curve \cite{Balabhadra_2017}. Such approach is based on the fact that these systems have a well-established state equation (see Eq. \eqref{eq:lir_definition}) and a method developed by \citeauthor{Balabhadra_2017} \cite{Balabhadra_2017} relies on estimating the thermometric parameter $R$ in the limit of zero excitation irradiance though a $R \; vs. \; \mathcal{P}$ curve. In this case, the presence of the intruding \twoHnine~ $\rightarrow$ \fourIthirteen~ is also critical. In the recent work of \citeauthor{Martins_2021} \cite{Martins_2021} they identified and corrected this by employing a Gaussian deconvolution of the emission spectra of \Fluorite~: \Er~ nanoparticles. This procedure would be much more difficult to apply for the \Yttria~ matrix due to the almost-total overlap between the two- and three-photon bands.
-
-\section{Conclusion}{\label{sec:conclusions}}
-
-We investigated how the presence of a three-photon luminescence band (\twoHnine~ $\rightarrow$ \fourIthirteen~) overlapped with the thermally coupled emission bands can lead to erroneous temperature readouts in luminescent thermometers based in \Yttria~: \Yb~/\Er~ systems. Despite the ratiometric thermometry technique being known for its power independence, this is not true when there are overlapping non-thermal transitions. We applied a new method to identify and separate these nonlinear bands in the yttria matrix based on a wavelength-resolved power-law study, without the need for multiple wavelength excitation. After the correction, the temperature readout uncertainty reduced from \SI{0.6}{\kelvin} to \SI{0.3}{\kelvin}. It was also shown that if this artifact is not properly corrected, as we increase the excitation power the thermometer measures an apparent cooling of the matrix. After correcting the spectra, we observe properly the self-heating effect, which is expected in the employed excitation power range. This procedure is an important strategy to increase the thermometer's reliability and accuracy, especially in single-particle measurements, in which typically higher excitation intensities are needed in order to get spectra with a good SNR.
-
-\begin{acknowledgement}
-The authors thank the financial support from the Brazilian science funding agencies Coordenação de Aperfeiçoamento Pessoal de Nível Superior (CAPES), Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), Fundação de Amparo à Ciência e Tecnologia do Estado de Pernambuco (FACEPE) and the National Photonics Institute - INFo/CNPq. LFS acknowledges Funcação de Amparo à Pesquisa do Estado de São Paulo (FAPESP - grant number 2020/04157-5). R.R.G acknowledges CNPq (grant number 303110/2019–8) and FAPESP (grant number 2020/05319-9 and 2017/11301-2) for financial support.
-\end{acknowledgement}
-
-\textbf{CRediT author statement}: PESSOA, A.R.: Conceptualization, Data Curation, Writing- Original draft; GALINDO, J.A.O.: Investigation, Methodology, Writing- review \& editing; DOS SANTOS, L. F.: Resources, Writing- review \& editing; GONÇALVES, R.R.: Resources, Writing- review \& editing; MENEZES, L. de S.: Supervision, Project Administration, Writing- review \& editing; AMARAL, A.M.: Conceptualization, Supervision, Writing- review \& editing.
-
-
-\onecolumn{
-\bibliography{references}}
+Mood changes when there is a topic, as well as when
+there is WH-movement.  \emph{Irrealis} is the mood when
+there is a non-subject topic or WH-phrase in Comp.
+\emph{Realis} is the mood when there is a subject topic
+or WH-phrase.
 
 \end{document}
